@@ -26,6 +26,7 @@ int main()
     {
         // First open in read only and read
         fd1 = open(myfifo,O_RDONLY);
+        //esperará a que haya algo que leer.
         read(fd1, str1, 80);
 
         // Print the read string and close

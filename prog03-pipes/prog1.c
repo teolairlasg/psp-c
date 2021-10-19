@@ -14,7 +14,7 @@ int main()
     // FIFO file path
     char * myfifo = "/tmp/myfifo";
 
-    // Creating the named file(FIFO)
+    // Creamos el FIFO
     // mkfifo(<pathname>, <permission>)
     mkfifo(myfifo, 0666);
 
