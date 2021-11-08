@@ -12,7 +12,7 @@ int main()
     int fd;
 
     // FIFO file path
-    char * myfifo = "/tmp/myfifo";
+    char myfifo[] = "/tmp/myfifo";
 
     // Creamos el FIFO
     // mkfifo(<pathname>, <permission>)
