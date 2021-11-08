@@ -85,7 +85,10 @@ int main()
     }
     else
     {
-        productor = fork(); //esto sólo el padre.
+        // Aquí en lugar de lanzar el hilo, hay que
+        // lanzar el proceso productor.exe (pág. 7 apuntes)
+        // pasándole por parámetro el pid del consumidor
+        //  productor = fork(); //esto sólo el padre.
         if (productor == -1)
         {
             perror("Error creando al productor.");
