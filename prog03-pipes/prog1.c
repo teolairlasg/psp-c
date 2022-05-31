@@ -9,7 +9,7 @@
 
 int main()
 {
-    int fd;
+    int fd; //file descriptor
 
     // FIFO file path
     char myfifo[] = "/tmp/myfifo";
